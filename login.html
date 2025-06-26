@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Greenwood High</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="login-page container">
+    <h2>School Portal Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <select id="role">
+        <option value="student">Student</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Login</button>
+      <p id="login-error"></p>
+    </form>
+  </section>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const role = document.getElementById("role").value;
+      if (
+        (role === "admin" && user === "admin" && pass === "admin123") ||
+        (role === "student" && user === "student" && pass === "student123")
+      ) {
+        localStorage.setItem("userRole", role);
+        localStorage.setItem("username", user);
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("login-error").textContent = "Invalid credentials.";
+      }
+    });
+  </script>
+</body>
+</html>

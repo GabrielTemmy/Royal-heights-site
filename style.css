@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: #004d40;
+  color: #fff;
+  padding: 10px 0;
+}
+header .logo {
+  float: left;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.hero {
+  padding: 60px 0;
+  text-align: center;
+}
+footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.login-page {
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+.login-page input, .login-page select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+.message {
+  background: #f1f1f1;
+  padding: 10px;
+  border-left: 4px solid #009688;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#message-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  resize: vertical;
+  border-radius: 5px;
+}
+#message-form button {
+  background-color: #004d40;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+}
+.gallery-section img {
+  max-width: 100%;
+  height: auto;
+}
