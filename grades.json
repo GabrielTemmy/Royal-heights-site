@@ -1,0 +1,16 @@
+{
+  "student": [
+    {
+      "subject": "Math",
+      "score": "A"
+    },
+    {
+      "subject": "Science",
+      "score": "B+"
+    },
+    {
+      "subject": "History",
+      "score": "A-"
+    }
+  ]
+}
